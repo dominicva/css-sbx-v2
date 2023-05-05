@@ -4,6 +4,7 @@
   /* color palette */
   --primary: #5dc7df;
   --secondary: #5941a9;
+  --secondary-dk: #342663;
   --black: #171414;
   --white: #f7f7f7;
   --accent: #ff4053;
@@ -80,6 +81,12 @@ a {
 
 a:hover {
   color: var(--accent);
+}
+
+/* misc utilities */
+.border-gradient {
+  height: 2px;
+  background: linear-gradient(90deg, #ff4053 0%, rgba(93, 199, 223, 1) 100%);
 }
 
 /* nav styles */
@@ -166,6 +173,7 @@ li [class*="fa-"]:hover {
 
 #intro hgroup p {
   font-family: var(--mono);
+  font-size: 85%;
 }
 
 .name {
@@ -195,4 +203,55 @@ li [class*="fa-"]:hover {
 
 #intro a:hover {
   text-decoration: none;
+}
+
+/* projects styles */
+.projects-section {
+  background-color: var(--secondary-dk);
+}
+
+#projects {
+  padding: 4rem 1rem 10rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: calc(2.5rem * 1.5);
+}
+
+#projects article h4 {
+  font-size: 1rem;
+}
+
+#projects article h3 {
+  color: var(--primary);
+}
+
+.blackbox {
+  background-color: var(--black);
+  padding: 1rem;
+  border-radius: 10px;
+  line-height: 1.5;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+#projects ul {
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.project-image-wrapper {
+  padding: 1rem;
+  border-left: 1px solid var(--primary);
+  border-top: 1px solid var(--primary);
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+#projects img {
+  border-radius: 10px;
 }
