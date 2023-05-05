@@ -1,0 +1,12 @@
+{
+  "name": "my-site-v2",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "Dom van Almsick",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
