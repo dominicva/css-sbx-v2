@@ -2,11 +2,12 @@
 
 :root {
   /* color palette */
-  --primary: #5c9eadff;
-  --secondary: #5941a9ff;
-  --black: #231f20ff;
-  --white: #eeeeeeff;
-  --accent: #ffafccff;
+  --primary: #5c9ead;
+  --secondary: #5941a9;
+  --black: #231f20;
+  --white: #eeeeee;
+  --accent: #ffafcc;
+  --accent-hot: #ff5666;
 
   /* font */
   --font-size: 1.3rem;
@@ -74,6 +75,16 @@ ol {
   margin: 0;
 }
 
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-hot);
+}
+
+/* nav styles */
 nav {
   padding: 4rem 1rem;
 }
@@ -81,8 +92,16 @@ nav {
 nav ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
   flex-flow: row wrap;
+  font-family: var(--mono);
+}
+
+#logo {
+  font-size: 100%;
+  color: var(--primary);
+  margin-right: 0.25rem;
 }
 
 nav li {
@@ -95,12 +114,32 @@ nav li:first-child {
 }
 
 nav a {
-  color: var(--white);
-  text-decoration: none;
-  font-size: 85%;
+  font-size: 80%;
   display: block;
 }
 
-nav a:hover {
-  color: var(--accent);
+li [class*="fa-"] {
+  font-size: 150%;
+  color: var(--white);
+}
+
+li [class*="fa-"]:hover {
+  color: var(--accent-hot);
+}
+
+.button {
+  display: block;
+  background-color: var(--secondary);
+  padding: 0.5rem 0.5rem 0.35rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease-out;
+  margin-top: -2px;
+}
+
+.button:hover {
+  /* padding: 0.55rem 0.55rem 0.4rem; */
+  color: var(--white);
+  background-color: var(--accent-hot);
+  transform: scale(1.05);
 }
