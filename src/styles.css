@@ -2,12 +2,11 @@
 
 :root {
   /* color palette */
-  --primary: #5c9ead;
+  --primary: #5dc7df;
   --secondary: #5941a9;
-  --black: #231f20;
+  --black: #171414;
   --white: #eeeeee;
-  --accent: #ffafcc;
-  --accent-hot: #ff5666;
+  --accent: #ff4053;
 
   /* font */
   --font-size: 1.3rem;
@@ -80,7 +79,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent-hot);
+  color: var(--accent);
 }
 
 /* nav styles */
@@ -131,7 +130,7 @@ li [class*="fa-"] {
 }
 
 li [class*="fa-"]:hover {
-  color: var(--accent-hot);
+  color: var(--accent);
 }
 
 .button {
@@ -146,7 +145,7 @@ li [class*="fa-"]:hover {
 
 .button:hover {
   color: var(--white);
-  background-color: var(--accent-hot);
+  background-color: var(--accent);
   transform: scale(1.05);
 }
 
@@ -191,7 +190,7 @@ li [class*="fa-"]:hover {
 }
 
 #intro a {
-  color: var(--accent-hot);
+  color: var(--accent);
 }
 
 #intro a:hover {
