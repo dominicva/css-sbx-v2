@@ -242,6 +242,7 @@ li [class*="fa-"]:hover {
   display: flex;
   gap: 1rem;
   font-size: 1rem;
+  justify-content: flex-start;
 }
 
 .project-image-wrapper {
@@ -254,4 +255,27 @@ li [class*="fa-"]:hover {
 
 #projects img {
   border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+  #projects article {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  #projects .project-text {
+    grid-column: 5 / 11;
+    grid-row: 1 / 2;
+    order: 2;
+    text-align: right;
+  }
+
+  #projects ul {
+    justify-content: flex-end;
+  }
+
+  #projects .project-image-wrapper {
+    grid-column: 1/ 6;
+    grid-row: 1 / 2;
+  }
 }
