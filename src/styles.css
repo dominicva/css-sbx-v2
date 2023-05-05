@@ -77,7 +77,6 @@ ol {
 
 a {
   color: var(--white);
-  text-decoration: none;
 }
 
 a:hover {
@@ -87,6 +86,8 @@ a:hover {
 /* nav styles */
 nav {
   padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 nav ul {
@@ -99,9 +100,7 @@ nav ul {
 }
 
 #logo {
-  font-size: 100%;
   color: var(--primary);
-  margin-right: 0.25rem;
 }
 
 nav li {
@@ -110,12 +109,20 @@ nav li {
 
 nav li:first-child {
   flex-basis: 100%;
-  font-size: 150%;
+  font-size: 90%;
 }
 
 nav a {
   font-size: 80%;
   display: block;
+  text-decoration: none;
+}
+
+nav a:first-of-type {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  align-items: baseline;
 }
 
 li [class*="fa-"] {
@@ -138,8 +145,55 @@ li [class*="fa-"]:hover {
 }
 
 .button:hover {
-  /* padding: 0.55rem 0.55rem 0.4rem; */
   color: var(--white);
   background-color: var(--accent-hot);
   transform: scale(1.05);
+}
+
+@media (min-width: 850px) {
+  nav li:first-child {
+    flex-basis: auto;
+    margin-right: auto;
+    margin-top: -3px;
+  }
+}
+
+/* intro styles */
+#intro {
+  padding: 4rem 1rem 10rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#intro hgroup p {
+  font-family: var(--mono);
+}
+
+.name {
+  display: block;
+  font-size: 4rem;
+  color: var(--primary);
+  font-family: var(--sans);
+  font-weight: 500;
+  margin-left: -2.5px;
+}
+
+#intro h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-left: -1px;
+}
+
+#intro > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1em 0;
+}
+
+#intro a {
+  color: var(--accent-hot);
+}
+
+#intro a:hover {
+  text-decoration: none;
 }
