@@ -225,8 +225,12 @@ li [class*="fa-"]:hover {
   font-size: 1rem;
 }
 
-#projects article h3 {
+#projects article h3 a {
   color: var(--primary);
+}
+
+#projects article h3 a:hover {
+  text-decoration: none;
 }
 
 .blackbox {
